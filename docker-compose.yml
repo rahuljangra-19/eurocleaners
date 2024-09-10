@@ -1,0 +1,46 @@
+services:
+
+    proxy:
+        image: jwilder/nginx-proxy:alpine
+        container_name: eurocleaners-proxy
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - /var/run/docker.sock:/tmp/docker.sock:ro
+            - ./docker/certificates:/etc/nginx/certs
+            - ./docker/proxy/custom-settings.conf:/etc/nginx/conf.d/custom_settings.conf
+
+    php:
+        build:
+            context: ./docker/php
+            dockerfile: Dockerfile
+        volumes:
+            - ./:/var/www/html
+            - ./docker/php/000-default.conf:/etc/apache2/sites-available/000-default.conf
+            - ./docker/php/php.ini:/usr/local/etc/php/conf.d/zzz_custom.ini
+        container_name: eurocleaners-php
+        environment:
+            VIRTUAL_HOST: eurocleaners-gr.local,www.eurocleaners-gr.local
+            HTTPS_METHOD: noredirect
+
+    mariadb:
+        image: mariadb:10.6
+        volumes:
+            - ./docker/data:/var/lib/mysql
+        container_name: eurocleaners-mariadb
+        ports:
+            - "3306:3306"
+        environment:
+            MARIADB_ROOT_PASSWORD: root
+            MARIADB_DATABASE: eurocleaners
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: eurocleaners-phpmyadmin
+        ports:
+            - "8080:80"
+        environment:
+            PMA_HOST: mariadb
+            MYSQL_ROOT_PASSWORD: root
+            UPLOAD_LIMIT: 100M

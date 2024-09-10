@@ -1,0 +1,24 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "build-ReorderableMultiSelect": "cd nova-components/ReorderableMultiSelect && npm run dev",
+        "build-ReorderableMultiSelect-prod": "cd nova-components/ReorderableMultiSelect && npm run prod",
+        "build-color-picker": "cd nova-components/ColorPicker && npm run dev",
+        "build-color-picker-prod": "cd nova-components/ColorPicker && npm run prod",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "axios": "^1.6.4",
+        "laravel-mix": "^6.0.49",
+        "laravel-vite-plugin": "^1.0"
+    },
+    "dependencies": {
+        "autoprefixer": "10.4.20",
+        "jquery": "^3.7.1",
+        "postcss": "^8.1.14",
+        "vite-plugin-global": "^0.0.1"
+    }
+}

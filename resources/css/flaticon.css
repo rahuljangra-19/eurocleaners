@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("/fonts/flaticon324d.ttf?75713cd0fe92267c82649658f1a3b271")
+            format("truetype"),
+        url("/fonts/flaticon324d.woff?75713cd0fe92267c82649658f1a3b271")
+            format("woff"),
+        url("/fonts/flaticon324d.woff2?75713cd0fe92267c82649658f1a3b271")
+            format("woff2"),
+        url("/fonts/flaticon324d.eot?75713cd0fe92267c82649658f1a3b271#iefix")
+            format("embedded-opentype"),
+        url("/fonts/flaticon324d.svg?75713cd0fe92267c82649658f1a3b271#flaticon")
+            format("svg");
+}
+
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-business:before {
+    content: "\f101";
+}
+.flaticon-calendar-1:before {
+    content: "\f102";
+}
+.flaticon-calendar:before {
+    content: "\f103";
+}
+.flaticon-comment-white-oval-bubble:before {
+    content: "\f104";
+}
+.flaticon-edit:before {
+    content: "\f105";
+}
+.flaticon-email:before {
+    content: "\f106";
+}
+.flaticon-house:before {
+    content: "\f107";
+}
+.flaticon-lamp:before {
+    content: "\f108";
+}
+.flaticon-left-quote:before {
+    content: "\f109";
+}
+.flaticon-location:before {
+    content: "\f10a";
+}
+.flaticon-magnifiying-glass:before {
+    content: "\f10b";
+}
+.flaticon-medal:before {
+    content: "\f10c";
+}
+.flaticon-phone-call:before {
+    content: "\f10d";
+}
+.flaticon-pinterest:before {
+    content: "\f10e";
+}
+.flaticon-placeholder:before {
+    content: "\f10f";
+}
+.flaticon-play:before {
+    content: "\f110";
+}
+.flaticon-right-arrow:before {
+    content: "\f111";
+}
+.flaticon-send:before {
+    content: "\f112";
+}
+.flaticon-startup:before {
+    content: "\f113";
+}
+.flaticon-stats:before {
+    content: "\f114";
+}
+.flaticon-telephone:before {
+    content: "\f115";
+}
+.flaticon-trophy:before {
+    content: "\f116";
+}
+.flaticon-user:before {
+    content: "\f117";
+}
+.flaticon-play-arrow:before {
+    content: "\f100";
+}
+.flaticon-right-arrow:before {
+    content: "\f101";
+}
+.flaticon-back:before {
+    content: "\f102";
+}
+.flaticon-message:before {
+    content: "\f103";
+}
+.flaticon-down-arrow:before {
+    content: "\f104";
+}
+.flaticon-industry:before {
+    content: "\f105";
+}
+.flaticon-helmet:before {
+    content: "\f106";
+}
+.flaticon-apartment:before {
+    content: "\f107";
+}
+.flaticon-happy:before {
+    content: "\f108";
+}
+.flaticon-broken-house:before {
+    content: "\f109";
+}
+.flaticon-roof:before {
+    content: "\f10a";
+}
+.flaticon-roof-1:before {
+    content: "\f10b";
+}
+.flaticon-roof-2:before {
+    content: "\f10c";
+}
+.flaticon-roof-3:before {
+    content: "\f10d";
+}
+.flaticon-roof-4:before {
+    content: "\f10e";
+}
+.flaticon-call-answer:before {
+    content: "\f10f";
+}
+.flaticon-facebook-placeholder-for-locate-places-on-maps:before {
+    content: "\f110";
+}
+.flaticon-maps-and-flags:before {
+    content: "\f111";
+}
+.flaticon-mail:before {
+    content: "\f112";
+}
